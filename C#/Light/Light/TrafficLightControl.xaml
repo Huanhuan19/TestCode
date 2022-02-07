@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="Light.TrafficLightControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:myConverter="clr-namespace:Light"
+             mc:Ignorable="d" 
+             d:DesignHeight="350" d:DesignWidth="120">
+    <UserControl.Resources>
+        <myConverter:ColorConverter x:Key="colorConverter" />
+    </UserControl.Resources>
+    <Grid>
+        <Border Background="Black" CornerRadius="10" BorderBrush="Gray" BorderThickness="2">
+            <StackPanel VerticalAlignment="Center">
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type Ellipse}">
+                        <Setter Property="Width" Value="100"></Setter>
+                        <Setter Property="Height" Value="100"></Setter>
+                        <Setter Property="Fill" Value="LightGray"></Setter>
+                        <Setter Property="Stroke" Value="Gray"></Setter>
+                        <Setter Property="StrokeThickness" Value="2"></Setter>
+                        <Setter Property="Margin" Value="4"></Setter>
+                    </Style>
+                </StackPanel.Resources>
+                <Ellipse Fill="{Binding  State,Converter={StaticResource colorConverter},ConverterParameter=RED}"></Ellipse>
+                <Ellipse Fill="{Binding State,Converter={StaticResource colorConverter},ConverterParameter=YELLOW}"></Ellipse>
+                <Ellipse Fill="{Binding State,Converter={StaticResource colorConverter},ConverterParameter=GREEN}"></Ellipse>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

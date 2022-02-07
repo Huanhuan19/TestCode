@@ -1,0 +1,148 @@
+﻿<Window x:Class="Support.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Support"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1080" Width="1920" Background="{x:Null}" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid x:Name="GridForSupport">
+        <Grid.Background>
+            <ImageBrush ImageSource="background_pure.png"></ImageBrush>
+        </Grid.Background>
+        <Ellipse HorizontalAlignment="Right" MouseDown="Ellipse_MouseDown"  Fill="#FFF30707" Width="45" Height="45" x:Name="btnclose">
+            <Ellipse.OpacityMask>
+                <ImageBrush ImageSource="关闭.png"/>
+            </Ellipse.OpacityMask>
+        </Ellipse>
+        <!--<ContentControl Grid.Row="1" Grid.Column="1" Name="support1"></ContentControl>
+        <ContentControl Grid.Row="1" Grid.Column="2" Name="support2"></ContentControl>
+        <ContentControl Grid.Row="1" Grid.Column="3" Name="support3"></ContentControl>
+        <ContentControl Grid.Row="1" Grid.Column="4" Name="support4"></ContentControl>
+        <ContentControl Grid.Row="1" Grid.Column="5" Name="support5"></ContentControl>
+        <ContentControl Grid.Row="1" Grid.Column="6" Name="support6"></ContentControl>
+        <ContentControl Grid.Row="1" Grid.Column="7" Name="support7"></ContentControl>
+        <ContentControl Grid.Row="1" Grid.Column="8" Name="support8"></ContentControl>
+        <ContentControl Grid.Row="1" Grid.Column="9" Name="support9"></ContentControl>
+        <ContentControl Grid.Row="1" Grid.Column="10" Name="support10"></ContentControl>
+        <ContentControl Grid.Row="1" Grid.Column="11" Name="support11"></ContentControl>
+        <ContentControl Grid.Row="1" Grid.Column="12" Name="support12"></ContentControl>
+        <ContentControl Grid.Row="1" Grid.Column="13" Name="support13"></ContentControl>
+
+        <ContentControl Grid.Row="2" Grid.Column="1" Name="support14"></ContentControl>
+        <ContentControl Grid.Row="2" Grid.Column="2" Name="support15"></ContentControl>
+        <ContentControl Grid.Row="2" Grid.Column="3" Name="support16"></ContentControl>
+        <ContentControl Grid.Row="2" Grid.Column="4" Name="support17"></ContentControl>
+        <ContentControl Grid.Row="2" Grid.Column="5" Name="support18"></ContentControl>
+        <ContentControl Grid.Row="2" Grid.Column="6" Name="support19"></ContentControl>
+        <ContentControl Grid.Row="2" Grid.Column="7" Name="support20"></ContentControl>
+        <ContentControl Grid.Row="2" Grid.Column="8" Name="support21"></ContentControl>
+        <ContentControl Grid.Row="2" Grid.Column="9" Name="support22"></ContentControl>
+        <ContentControl Grid.Row="2" Grid.Column="10" Name="support23"></ContentControl>
+        <ContentControl Grid.Row="2" Grid.Column="11" Name="support24"></ContentControl>
+        <ContentControl Grid.Row="2" Grid.Column="12" Name="support25"></ContentControl>
+        <ContentControl Grid.Row="2" Grid.Column="13" Name="support26"></ContentControl>
+
+        <ContentControl Grid.Row="3" Grid.Column="1" Name="support27"></ContentControl>
+        <ContentControl Grid.Row="3" Grid.Column="2" Name="support28"></ContentControl>
+        <ContentControl Grid.Row="3" Grid.Column="3" Name="support29"></ContentControl>
+        <ContentControl Grid.Row="3" Grid.Column="4" Name="support30"></ContentControl>
+        <ContentControl Grid.Row="3" Grid.Column="5" Name="support31"></ContentControl>
+        <ContentControl Grid.Row="3" Grid.Column="6" Name="support32"></ContentControl>
+        <ContentControl Grid.Row="3" Grid.Column="7" Name="support33"></ContentControl>
+        <ContentControl Grid.Row="3" Grid.Column="8" Name="support34"></ContentControl>
+        <ContentControl Grid.Row="3" Grid.Column="9" Name="support35"></ContentControl>
+        <ContentControl Grid.Row="3" Grid.Column="10" Name="support36"></ContentControl>
+        <ContentControl Grid.Row="3" Grid.Column="11" Name="support37"></ContentControl>
+        <ContentControl Grid.Row="3" Grid.Column="12" Name="support38"></ContentControl>
+        <ContentControl Grid.Row="3" Grid.Column="13" Name="support39"></ContentControl>
+
+        <ContentControl Grid.Row="4" Grid.Column="1" Name="support40"></ContentControl>
+        <ContentControl Grid.Row="4" Grid.Column="2" Name="support41"></ContentControl>
+        <ContentControl Grid.Row="4" Grid.Column="3" Name="support42"></ContentControl>
+        <ContentControl Grid.Row="4" Grid.Column="4" Name="support43"></ContentControl>
+        <ContentControl Grid.Row="4" Grid.Column="5" Name="support44"></ContentControl>
+        <ContentControl Grid.Row="4" Grid.Column="6" Name="support45"></ContentControl>
+        <ContentControl Grid.Row="4" Grid.Column="7" Name="support46"></ContentControl>
+        <ContentControl Grid.Row="4" Grid.Column="8" Name="support47"></ContentControl>
+        <ContentControl Grid.Row="4" Grid.Column="9" Name="support48"></ContentControl>
+        <ContentControl Grid.Row="4" Grid.Column="10" Name="support49"></ContentControl>
+        <ContentControl Grid.Row="4" Grid.Column="11" Name="support50"></ContentControl>
+        <ContentControl Grid.Row="4" Grid.Column="12" Name="support51"></ContentControl>
+        <ContentControl Grid.Row="4" Grid.Column="13" Name="support52"></ContentControl>
+
+        <ContentControl Grid.Row="5" Grid.Column="1" Name="support53"></ContentControl>
+        <ContentControl Grid.Row="5" Grid.Column="2" Name="support54"></ContentControl>
+        <ContentControl Grid.Row="5" Grid.Column="3" Name="support55"></ContentControl>
+        <ContentControl Grid.Row="5" Grid.Column="4" Name="support56"></ContentControl>
+        <ContentControl Grid.Row="5" Grid.Column="5" Name="support57"></ContentControl>
+        <ContentControl Grid.Row="5" Grid.Column="6" Name="support58"></ContentControl>
+        <ContentControl Grid.Row="5" Grid.Column="7" Name="support59"></ContentControl>
+        <ContentControl Grid.Row="5" Grid.Column="8" Name="support60"></ContentControl>
+        <ContentControl Grid.Row="5" Grid.Column="9" Name="support61"></ContentControl>
+        <ContentControl Grid.Row="5" Grid.Column="10" Name="support62"></ContentControl>
+        <ContentControl Grid.Row="5" Grid.Column="11" Name="support63"></ContentControl>
+        <ContentControl Grid.Row="5" Grid.Column="12" Name="support64"></ContentControl>
+        <ContentControl Grid.Row="5" Grid.Column="13" Name="support65"></ContentControl>
+
+        <ContentControl Grid.Row="6" Grid.Column="1" Name="support66"></ContentControl>
+        <ContentControl Grid.Row="6" Grid.Column="2" Name="support67"></ContentControl>
+        <ContentControl Grid.Row="6" Grid.Column="3" Name="support68"></ContentControl>
+        <ContentControl Grid.Row="6" Grid.Column="4" Name="support69"></ContentControl>
+        <ContentControl Grid.Row="6" Grid.Column="5" Name="support70"></ContentControl>
+        <ContentControl Grid.Row="6" Grid.Column="6" Name="support71"></ContentControl>
+        <ContentControl Grid.Row="6" Grid.Column="7" Name="support72"></ContentControl>
+        <ContentControl Grid.Row="6" Grid.Column="8" Name="support73"></ContentControl>
+        <ContentControl Grid.Row="6" Grid.Column="9" Name="support74"></ContentControl>
+        <ContentControl Grid.Row="6" Grid.Column="10" Name="support75"></ContentControl>
+        <ContentControl Grid.Row="6" Grid.Column="11" Name="support76"></ContentControl>
+        <ContentControl Grid.Row="6" Grid.Column="12" Name="support77"></ContentControl>
+        <ContentControl Grid.Row="6" Grid.Column="13" Name="support78"></ContentControl>
+
+        <ContentControl Grid.Row="7" Grid.Column="1" Name="support79"></ContentControl>
+        <ContentControl Grid.Row="7" Grid.Column="2" Name="support80"></ContentControl>
+        <ContentControl Grid.Row="7" Grid.Column="3" Name="support81"></ContentControl>
+        <ContentControl Grid.Row="7" Grid.Column="4" Name="support82"></ContentControl>
+        <ContentControl Grid.Row="7" Grid.Column="5" Name="support83"></ContentControl>
+        <ContentControl Grid.Row="7" Grid.Column="6" Name="support84"></ContentControl>
+        <ContentControl Grid.Row="7" Grid.Column="7" Name="support85"></ContentControl>
+        <ContentControl Grid.Row="7" Grid.Column="8" Name="support86"></ContentControl>
+        <ContentControl Grid.Row="7" Grid.Column="9" Name="support87"></ContentControl>
+        <ContentControl Grid.Row="7" Grid.Column="10" Name="support88"></ContentControl>
+        <ContentControl Grid.Row="7" Grid.Column="11" Name="support89"></ContentControl>
+        <ContentControl Grid.Row="7" Grid.Column="12" Name="support90"></ContentControl>
+        <ContentControl Grid.Row="7" Grid.Column="13" Name="support91"></ContentControl>
+
+        <ContentControl Grid.Row="8" Grid.Column="1" Name="support92"></ContentControl>
+        <ContentControl Grid.Row="8" Grid.Column="2" Name="support93"></ContentControl>
+        <ContentControl Grid.Row="8" Grid.Column="3" Name="support94"></ContentControl>
+        <ContentControl Grid.Row="8" Grid.Column="4" Name="support95"></ContentControl>
+        <ContentControl Grid.Row="8" Grid.Column="5" Name="support96"></ContentControl>
+        <ContentControl Grid.Row="8" Grid.Column="6" Name="support97"></ContentControl>
+        <ContentControl Grid.Row="8" Grid.Column="7" Name="support98"></ContentControl>
+        <ContentControl Grid.Row="8" Grid.Column="8" Name="support99"></ContentControl>
+        <ContentControl Grid.Row="8" Grid.Column="9" Name="support100"></ContentControl>
+        <ContentControl Grid.Row="8" Grid.Column="10" Name="support101"></ContentControl>
+        <ContentControl Grid.Row="8" Grid.Column="11" Name="support102"></ContentControl>
+        <ContentControl Grid.Row="8" Grid.Column="12" Name="support103"></ContentControl>
+        <ContentControl Grid.Row="8" Grid.Column="13" Name="support104"></ContentControl>-->
+        <!--<local:SupportGraph x:Name="Support2" SupportNo="1#" IsLighten="{Binding SupportLight1}" Grid.Column="1" Grid.Row="1" ></local:SupportGraph>
+        <local:SupportGraph x:Name="Support3" SupportNo="2#" IsLighten="{Binding SupportLight2}" Grid.Column="2" Grid.Row="1" ></local:SupportGraph>
+        <local:SupportGraph x:Name="Support4" SupportNo="3#" IsLighten="{Binding SupportLight3}" Grid.Column="3" Grid.Row="1" ></local:SupportGraph>
+        <local:SupportGraph x:Name="Support5" SupportNo="4#" IsLighten="{Binding SupportLight4}" Grid.Column="4" Grid.Row="1" ></local:SupportGraph>
+        <local:SupportGraph x:Name="Support6" SupportNo="5#" IsLighten="{Binding SupportLight5}" Grid.Column="5" Grid.Row="1" ></local:SupportGraph>
+        <local:SupportGraph x:Name="Support7" SupportNo="6#" IsLighten="{Binding SupportLight6}" Grid.Column="6" Grid.Row="1" ></local:SupportGraph>
+        <local:SupportGraph x:Name="Support8" SupportNo="7#" IsLighten="{Binding SupportLight7}" Grid.Column="7" Grid.Row="1" ></local:SupportGraph>
+        <local:SupportGraph x:Name="Support9" SupportNo="8#" IsLighten="{Binding SupportLight8}" Grid.Column="8" Grid.Row="1" ></local:SupportGraph>
+        <local:SupportGraph x:Name="Support10" SupportNo="9#" Grid.Column="9" Grid.Row="1"></local:SupportGraph>
+        <local:SupportGraph x:Name="Support11" SupportNo="10#" Grid.Column="10" Grid.Row="1"></local:SupportGraph>
+        <local:SupportGraph x:Name="Support12" SupportNo="11#" Grid.Column="11" Grid.Row="1"></local:SupportGraph>
+        <local:SupportGraph x:Name="Support13" SupportNo="12#" Grid.Column="12" Grid.Row="1"></local:SupportGraph>
+        <local:SupportGraph x:Name="Support14" SupportNo="13#" Grid.Column="13" Grid.Row="1"></local:SupportGraph>
+        <local:SupportGraph x:Name="Support15" SupportNo="14#" Grid.Column="1" Grid.Row="2"></local:SupportGraph>
+        <local:SupportGraph x:Name="Support16" SupportNo="15#" Grid.Column="2" Grid.Row="2"></local:SupportGraph>
+        <local:SupportGraph x:Name="Support17" SupportNo="16#" Grid.Column="3" Grid.Row="2"></local:SupportGraph>
+        <local:SupportGraph x:Name="Support18" SupportNo="17#" Grid.Column="4" Grid.Row="2"></local:SupportGraph>
+        <local:SupportGraph x:Name="Support19" SupportNo="18#" Grid.Column="5" Grid.Row="2"></local:SupportGraph>-->
+    </Grid>                                               
+</Window>
